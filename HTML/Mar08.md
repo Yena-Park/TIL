@@ -1,0 +1,19 @@
+Calculator
+==========
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title> forms-adder.html</title>
+</head>
+<body>
+    <form name="fomr2" onsubmit="reture false" oninput="o.value=aa.valueAsNumber+bb.valueAsNumber">
+        <fieldset>
+            <legend>An Extremely Simple Caculator (Integer Addition only):</legend>
+            <input name="aa" id="aa" type="number" value="0" step="any" />+
+            <input name="bb" id="bb" type="number" value="0" step="any" />=
+            <output id="o"></output>
+        </fieldset>
+    </form>
+</body>
+</html>
