@@ -1,6 +1,6 @@
 Calculator
 ==========
-
+```html
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -17,3 +17,4 @@ Calculator
     </form>
 </body>
 </html>
+```
