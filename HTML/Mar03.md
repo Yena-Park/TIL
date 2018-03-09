@@ -1,0 +1,47 @@
+Making form with label, input
+=============================
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title> Job Registration Form </title>
+</head>
+<body>
+    <header>
+    <h1>Job Registration Form</h1>
+    </header>
+    <main>
+        <form oninput="personalInfo.value=name.value">
+            <label>Enter your Nmae :&nbsp;</label>
+            <input id="name" placeholder="Enter name" type="text" maxlength="20"><br>
+            <label>Enter your email :&nbsp;</label>
+            <input placeholder="Enter email" type="text" maxlength="20"><br>
+            <fieldset style="width:100px; height:100px">
+                <legend>Choose your Gender:</legend>
+                <input name="gender" type="radio" value="male"> Male <br>
+                <input name="gender" type="radio" value="female"> Female <br>
+            </fieldset>
+            <label>Choose your password :&nbsp;</label>
+            <input placeholder="Enter password" type="text" maxlength="20" required><br>
+            <label>Repeat password :&nbsp;</label>
+            <input placeholder="Repeat password" type="text" maxlength="20"><br>
+            <label>Enter your mobile number :&nbsp;</label>
+            <input placeholder="Enter mobile" type="text" maxlength="20"><br>
+            <label>Enter your date of birth :&nbsp;</label>
+            <input type="date"><br>
+            <label>Enter your Address</label>
+            <textarea></textarea><br>
+            <label>Choose your location</label>
+            <select name="location" size="2">
+            <option value="Brampton">Brampton</option>
+            <option value="Oakville">Oakville</option>
+            </select><br>
+            <label>Select your Resume:&nbsp;</label>
+            <input id="resume" name="resume" type="file"><br>
+            <input type="submit" value="submit"><br>
+            <label>Details entered by you :&nbsp;</label>
+            <output id="personalInfo"></output>
+        </form>
+    </main>
+</body>
+</html>
