@@ -1,6 +1,7 @@
 Making form with label, input
 =============================
 
+```html
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -45,3 +46,4 @@ Making form with label, input
     </main>
 </body>
 </html>
+```
