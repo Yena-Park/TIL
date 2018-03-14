@@ -19,7 +19,7 @@ public static void main(String[] args){
 ```
 ```java
 public static void main(String[] args){
-  for(int i=1; i <= 5; i++){
+  for(int i=0; i <= 5; i++){
     System.out.println("Table of " +i+" Starts here");
     for(int j=1; j<10; j++){
       System.out.println(i+"*"+j+"="+(i*j));
@@ -28,10 +28,20 @@ public static void main(String[] args){
 }
 ```
 For Pattern Test
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
 ----------------
 ```java
 public static void main(String[] args) {
-		for(int i=1; i<=10; i++){
+		for(int i=1; i<10; i++){
 			for(int j=1; j<=i; j++) {
 			  System.out.print("*");
 			}
