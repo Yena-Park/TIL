@@ -44,8 +44,30 @@ int[] myList = new int[5];
 
 int sum = 0;
 
-for (int i = 0; i<5 ; i++) {
+for (int i = 0; i<myList.length ; i++) {
   sum = sum+myList[i];
 }
 System.out.println("Sum of my list is "+ sum);
+```
+Write a program. Ask user to enter the length of array.Once you get the length from user, declare and create the ARRAY of length given by user. Using FOR LOOP
+------------------------------------------
+```java
+import java.util.Scanner;
+public class arrayScanner {
+
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter the number");
+    int number = input.nextInt();
+    
+    int[] myList = new int[number];
+    int sum=0;
+    for (int i = 0; i<= myList.length-1 ; i++) {
+      sum=sum+myList[i];
+      System.out.println("Enter integer");
+      myList[i]=input.nextInt();
+    }
+    System.out.println("The total sum is "+sum);
+}
+}
 ```
