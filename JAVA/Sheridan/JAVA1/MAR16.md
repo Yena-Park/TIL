@@ -58,9 +58,9 @@ public class arrayScanner {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter the number");
-    int number = input.nextInt();
+    int length = input.nextInt();
     
-    int[] myList = new int[number];
+    int[] myList = new int[length];
     int sum=0;
     for (int i = 0; i<= myList.length-1 ; i++) {
       sum=sum+myList[i];
@@ -71,3 +71,9 @@ public class arrayScanner {
 }
 }
 ```
+Store values from 1 to 10 in an array. Using FOR loop print even numbers.
+--------------------------------------------------------------------------
+```java
+
+```
+You have 5 values in an array{33, 35, 48, 37, 56}. Find out Max value of the ARRAY
