@@ -125,3 +125,31 @@ public class arrayStudentGrade {
 
 }
 ```
+Ask user to enter length. Get Int numbers from user. Find average for all the numbers.
+-------------------------------------------------------------------------------------
+```java
+import java.util.Scanner;
+public class arrayUserAverage {
+public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the length");
+		int length = input.nextInt();
+		int[] myList = new int[length];
+
+		for(int i=0; i<myList.length; i++) {
+			System.out.println("Enter the value as integer");
+			myList[i] = input.nextInt();
+		}
+
+		int sum = 0;
+		for(int i=0; i<myList.length; i++) {
+			sum = sum+myList[i];
+		}
+
+		double average = sum/length;
+
+		System.out.println("Average is "+average);
+
+	}
+}
+```
