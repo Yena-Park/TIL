@@ -28,7 +28,7 @@ int[] myList = new int[5];//creating
   myList[2]=30;
   myList[3]=40;
   myList[4]=50
-for (int i =4 ; i>=0; i--) {
+for (int i = myList. ; i>=0; i--) {
   System.out.println("My list value of position "+i+ "is "+myList[i]);
 }
 ```
