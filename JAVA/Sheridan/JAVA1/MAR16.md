@@ -77,3 +77,21 @@ Store values from 1 to 10 in an array. Using FOR loop print even numbers.
 
 ```
 You have 5 values in an array{33, 35, 48, 37, 56}. Find out Max value of the ARRAY
+----------------------------------------------------------------------------------
+```java
+public static void main(String[] args) {
+  int[] myList = {2, 10, 30, 8, 5};
+
+  for(int i=0; i<myList.length; i++) {
+  if (myList[i]%2 == 0)
+    System.out.println(myList[i]+" is Even number");
+  else
+    System.out.println(myList[i]+" is Odd number");
+  }
+}
+```
+Ask user to enter number of student. Ask user to enter total marks for each student. Now print Grade for all the students. Total marks>90 then print "A", Total marks>80 then print "B", Total marks>70 then "C", Total marks>60 then "D" and Total marks>50 then print "E".
+-------------------------------------------------------------------------------------------------------------------------
+```java
+
+```
