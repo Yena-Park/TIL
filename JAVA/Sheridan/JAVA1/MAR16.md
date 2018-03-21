@@ -93,5 +93,35 @@ public static void main(String[] args) {
 Ask user to enter number of student. Ask user to enter total marks for each student. Now print Grade for all the students. Total marks>90 then print "A", Total marks>80 then print "B", Total marks>70 then "C", Total marks>60 then "D" and Total marks>50 then print "E".
 -------------------------------------------------------------------------------------------------------------------------
 ```java
+import java.util.Scanner;
+public class arrayStudentGrade {
 
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter the number student");
+    int length = input.nextInt();
+    int[] myList = new int[length];
+		
+    for(int i=0; i<myList.length; i++) {
+      System.out.println("Enter the marks");
+      myList[i] = input.nextInt();
+    }
+		
+    for(int i=0; i<myList.length; i++) {
+      if (myList[i]>=90) {
+        System.out.println(myList[i]+" is A");}
+      if (myList[i]>=80 && myList[i]<90) {
+        System.out.println(myList[i]+" is B");}
+      if (myList[i]>=70 && myList[i]<80) {
+        System.out.println(myList[i]+" is C");}
+      if (myList[i]>=60 && myList[i]<70) {
+        System.out.println(myList[i]+" is D");}
+      if (myList[i]<50) {
+        System.out.println(myList[i]+" is E");}
+	
+      }
+
+  }
+
+}
 ```
