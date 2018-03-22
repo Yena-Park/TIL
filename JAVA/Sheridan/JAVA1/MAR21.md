@@ -67,3 +67,48 @@ public class displayNameHello {
   }
 }
 ```
+Calculate Area
+--------------
+```java
+public static void main(String[] args) {
+  calculateArea(10);
+  calculateArea(20);
+  calculateArea(40);
+}
+
+public static void calculateArea(int r) {
+  double area = 3.14*r*r;
+  System.out.println("Area is "+area);
+}
+```
+Create a method to print table as below for the number given in parameter of the mothod. Make sure you use FOR LOOP to print below table. Let us assume that number in parameter is 5. Then print 5 * 1 = 5   5 * 2 = 10 ... 5 * 10 = 50 
+-----------------------------------------------------------------------------------------------------------------------------
+```java
+public static void main(String[] args) {
+  makeTable(5);
+}
+		
+public static void makeTable(int r) {
+  for(int i=1; i<=10; i++) {
+  int result = 5*i;
+  System.out.println("5 * "+i+" = "+result);
+}
+```
+```java
+  public static void main(String[] args) {
+    calculateSum(5, 4.5);
+  }
+  public static void calculateSum(int a, double b) {
+    double sum = a+b;
+    System.out.println("sum is "+sum);
+  }
+```
+```java
+  public static void main(String[] args) {
+    double calculateSum(5, 4.5, 10, 20);
+    System.out.println("Value of d is "+d);
+  }
+  public static void calculateSum(int a, double b) {
+    double sum = a+b+c+d;
+    System.out.println("sum is "+sum);
+```
