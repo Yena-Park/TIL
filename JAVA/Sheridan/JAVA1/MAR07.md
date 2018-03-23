@@ -27,7 +27,7 @@ below exmample is using concat method
 caculating length
 -----------------
 ```java
-  System.out.println("length of string  s85 is "+s5.length());    
+  System.out.println("length of string  s5 is "+s5.length());    
 ```
 character set
 -------------
