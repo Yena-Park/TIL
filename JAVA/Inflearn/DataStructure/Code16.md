@@ -18,7 +18,7 @@ public class Code16 {
     System.out.println("The result is "+result);
   }
   
-  static int power(int n, int m)
+  public static int power(int n, int m)
   {
     int prod = 1;
     for(int i=0; i<m; i++)
