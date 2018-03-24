@@ -14,8 +14,8 @@ below example is how to concatenate string without using + sign
 ```java
 System.out.println("I'm Yena "+"I will take Java class");
 ```
-below exmample is using concat method
--------------------------------------
+.concat : Concat(concatenate) method
+------------------------------------
 ```java
   String s4 = "Good evening";
   String s5 = " today is Wednesday";
@@ -24,13 +24,13 @@ below exmample is using concat method
   System.out.println(s6);
   System.out.println(s7);
 ```
-caculating length
------------------
+.length() : caculating length
+-----------------------------
 ```java
   System.out.println("length of string  s5 is "+s5.length());    
 ```
-character set
--------------
+.charAt : character set
+-----------------------
 ```java
   String s8 = "Monday";
   int i = s8.length();
@@ -40,8 +40,8 @@ character set
   System.out.println(s8.toUpperCase());
   System.out.println(s8.toLowerCase())
 ```
-substring
----------
+.substring( , )
+---------------
 ```java
   System.out.println(s8.substring(0, 1));
   System.out.println(s8.substring(2, 5));
@@ -54,7 +54,7 @@ getting input from console
   String s9 = input.nextLine();
   System.out.println(s8);
 ```  
-using next method for word separated by spaces
+.next() : using next method for word separated by spaces
 ----------------------------------------------
 ```java
   Scanner input = new Scanner(System.in);
@@ -64,8 +64,8 @@ using next method for word separated by spaces
   String s12 = input.next();
   System.out.println(s10+s11+s12);
 ```
-converting string in int
-------------------------
+Integer.parseInt() / Double.parseDouble() : converting string to integer or double
+----------------------------------------------------------------------------------
 ```java
   Scanner input = new Scanner(System.int);
   System.out.println("Enter first number which will stored as String");
@@ -76,8 +76,8 @@ converting string in int
   int l = Integer.parseInt(s14);
   System.out.println("Sum of two numbers are "+(k+l));
 ```
-string comparison
------------------
+.equals() : string comparison
+-----------------------------
 ```java
   Scanner input = new Scanner(System.in);
   String s14 = "Monday";
