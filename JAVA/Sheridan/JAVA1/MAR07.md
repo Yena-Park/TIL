@@ -43,8 +43,8 @@ System.out.println("I'm Yena "+"I will take Java class");
 .substring( , )
 ---------------
 ```java
-  System.out.println(s8.substring(0, 1));
-  System.out.println(s8.substring(2, 5));
+  System.out.println(s8.substring(0, 1)); //0부터 1바로 전까지, 0자리에 있는 것만
+  System.out.println(s8.substring(2, 5)); //2부터 5바로 전까지, 2~4까지
 ```
 getting input from console
 --------------------------
