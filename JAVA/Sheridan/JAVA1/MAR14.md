@@ -17,51 +17,6 @@ public static void main(String[] args){
   }
 }
 ```
-For Five Table
---------------
-```java
-public static void main(String[] args){
-  for(int i=0; i <= 5; i++){
-    System.out.println("Table of " +i+" Starts here");
-    for(int j=1; j<10; j++){
-      System.out.println(i+"*"+j+"="+(i*j));
-    }
-  }
-}
-```
-For Pattern Test
-----------------
-```java
-public static void main(String[] args) {
-  for(int i=0; i<=10; i++){
-    for(int j=1; j<=i; j++) {
-      System.out.print("*");
-    }
-        System.out.println("*");
-}
-```
-For Reverse Pattern
--------------------
-```java
-public static void main(String[] args) {
-  for(int i=10; i>=1; i--){
-    for(int j=0;j<=i-1;j++) {
-        System.out.print("*");
-      }
-   System.out.println("*");
-   }
-}
-```
-```java
-public static void main(String[] args) {
-  for(int i=0; i<=10; i++){
-    for(int j=10;j>=i;j--) {
-        System.out.print("*");
-      }
-   System.out.println("*");
-   }
-}
-```
 For Even Odd Test
 -----------------
 ```java
@@ -119,6 +74,65 @@ public class ForSumTest {
     }
     
     System.out.println("sum 1 is " +sum1);
+  }
+}
+```
+Nested loop : For Pattern Test
+----------------
+```java
+public static void main(String[] args) {
+  for(int i=0; i<=10; i++){
+    for(int j=1; j<=i; j++) {
+      System.out.print("*");
+    }
+        System.out.println("*");
+}
+```
+Nested loop : For Reverse Pattern
+-------------------
+```java
+public static void main(String[] args) {
+  for(int i=10; i>=1; i--){
+    for(int j=0;j<=i-1;j++) {
+        System.out.print("*");
+      }
+   System.out.println("*");
+   }
+}
+```
+```java
+public static void main(String[] args) {
+  for(int i=0; i<=10; i++){
+    for(int j=10;j>=i;j--) {
+        System.out.print("*");
+      }
+   System.out.println("*");
+   }
+}
+```
+Nested loop : For Five Table
+----------------------------
+```java
+public static void main(String[] args){
+  for(int i=0; i <= 5; i++){
+    System.out.println("Table of " +i+" Starts here");
+    for(int j=1; j<10; j++){
+      System.out.println(i+"*"+j+"="+(i*j));
+    }
+  }
+}
+```
+Nested loop : For from 1 to 5 Table
+-----------------------------------
+```java
+public static void main(String[] args) {
+  for(int i = 1 ; i <=5; i ++)
+  { //inside for loop
+    System.out.println("--------------------TABLE OF  " + i +" STARTS HERE -------------");
+    for (int j=1;  j<=10;   j++)
+    { //child for loop
+      System.out.println(i + " *  " + j  +" = " +(i*j));
+    } //end of child for loop
   }
 }
 ```
