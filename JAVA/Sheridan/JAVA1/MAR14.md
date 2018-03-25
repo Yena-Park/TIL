@@ -17,6 +17,8 @@ public static void main(String[] args){
   }
 }
 ```
+For Five Table
+--------------
 ```java
 public static void main(String[] args){
   for(int i=0; i <= 5; i++){
@@ -58,5 +60,65 @@ public static void main(String[] args) {
       }
    System.out.println("*");
    }
+}
+```
+For Even Odd Test
+-----------------
+```java
+public class ForEvenOddTest {
+  public static void main(String[] args) {
+    for (int i=1;i<=20;i++)
+    {
+      if (i%2 == 0 ) 
+        System.out.print(i + " ");
+    }
+  }  
+} 
+```
+For Square
+----------
+```java
+public class ForSquare {
+  public static void main(String[] args) {
+    for (int i=1;i<=10;i++)
+    {
+      System.out.println(i + " " + (int)(Math.pow(i,2)));
+    }
+  }
+}
+```
+For Square Reverse
+------------------
+```java
+public class ForSquareReverse {
+  public static void main(String[] args) {
+    for (int i=10;i>=0;i--)
+    {
+      System.out.println(i + "      "     +(int)(Math.pow(i,2)));
+    }
+  }
+}
+```
+For Sum Test
+------------
+```java
+public class ForSumTest {
+  public static void main(String[] args) {
+    int sum = 0 ;
+    int sum1= 0 ;
+    for (int i=0;i<10;i++)
+    {
+      sum += i ;
+    }
+
+    System.out.println("sum is " +sum);
+
+    for (int i=0;i<10;++i)
+    {
+      sum1 += i ;
+    }
+    
+    System.out.println("sum 1 is " +sum1);
+  }
 }
 ```
