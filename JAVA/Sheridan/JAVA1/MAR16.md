@@ -108,7 +108,7 @@ for (int i = 0; i<myList.length ; i++) {
 System.out.println("Sum of my list is "+ sum);
 ```
 Write a program. Ask user to enter the length of array.Once you get the length from user, declare and create the ARRAY of length given by user. And then find the sum of all array. Using FOR LOOP
-------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 ```java
 import java.util.Scanner;
 public class arrayScanner {
@@ -127,6 +127,32 @@ public class arrayScanner {
     }
     System.out.println("The total sum is "+sum);
 }
+}
+```
+Write a program. Ask user to enter the length of array.Once you get the length from user, declare and create the ARRAY of length given by user. And then find the sum of all array. Using FOR LOOP
+-------------------------------------------------------------------------------------------------------------------------
+```java
+import java.util.Scanner;
+public class ArrayAverage {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter length");
+    int length = input.nextInt();
+    int[]myList = new int[length];
+		
+    for(int i=0; i<myList.length; i++) {
+      System.out.println("Enter number");
+      myList[i] = input.nextInt();
+    }
+		
+    int sum=0;
+    for(int i=0; i<myList.length; i++) {
+      sum += myList[i];
+    }
+		
+    double average = sum/length;
+    System.out.println("The average is "+average);
+  }
 }
 ```
 Store values from 1 to 10 in an array. Using FOR loop print even numbers.
