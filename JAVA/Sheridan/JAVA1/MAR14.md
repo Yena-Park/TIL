@@ -92,17 +92,7 @@ public static void main(String[] args) {
 }
 ```
 Nested loop : For Reverse Pattern
--------------------
-```java
-public static void main(String[] args) {
-  for(int i=10; i>=1; i--){
-    for(int j=0;j<=i-1;j++) {
-        System.out.print("*");
-      }
-   System.out.println("*");
-   }
-}
-```
+---------------------------------
 ```java
 public static void main(String[] args) {
   for(int i=0; i<10; i++){
