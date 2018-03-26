@@ -77,6 +77,19 @@ for (int i = myList.length; i>=0; i--) {
   System.out.println("My list value of position "+i+ "is "+myList[i]);
 }
 ```
+Array test for odd number and even number
+-----------------------------------------
+```java
+public static void main(String[] args) {
+  int[] myList = {2,10,30,8,5};
+  for (int i = 0 ;i<myList.length; i++){    
+    if (myList[i]%2 ==0)
+      System.out.println(myList[i] +"is Even number");
+    else 
+      System.out.println(myList[i] +"is odd number");
+  }
+}
+```
 Using same array. Write a program using for loop to produce sum of all the value of ARRAY
 -----------------------------------------------------------------------------------------
 ```java
