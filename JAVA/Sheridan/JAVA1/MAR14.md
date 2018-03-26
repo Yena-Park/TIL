@@ -81,11 +81,14 @@ Nested loop : For Pattern Test
 ----------------
 ```java
 public static void main(String[] args) {
-  for(int i=0; i<=10; i++){
-    for(int j=1; j<=i; j++) {
+  for (int i=0;i<=10;i++)
+  {
+    for(int j=1;j<=i;j++)
+    {
       System.out.print("*");
-    }
-        System.out.println("*");
+    } 
+    System.out.println("*");
+  }
 }
 ```
 Nested loop : For Reverse Pattern
@@ -102,11 +105,11 @@ public static void main(String[] args) {
 ```
 ```java
 public static void main(String[] args) {
-  for(int i=0; i<=10; i++){
-    for(int j=10;j>=i;j--) {
+  for(int i=0; i<10; i++){
+    for(int j=10;j>i;j--) {
         System.out.print("*");
       }
-   System.out.println("*");
+   System.out.println("");
    }
 }
 ```
