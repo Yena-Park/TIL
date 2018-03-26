@@ -1,5 +1,50 @@
 Array
 =====
+Array Scanner
+-------------
+```java
+import java.util.Scanner;
+public class arrayScanner {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter the number");
+    int length = input.nextInt();
+		
+    int[] myList = new int[length];
+    int sum=0;
+    for (int i = 0; i<= myList.length-1 ; i++) {
+      System.out.println("Enter integer");
+      myList[i]=input.nextInt();
+      sum=sum+myList[i];
+    }
+   System.out.println("The total sum is "+sum);
+  }
+}
+```
+Array Input
+-----------
+```java
+import java.util.Scanner;
+public class Excercise {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+      System.out.println("Enter length of Array");
+      int length = input.nextInt();
+		
+      int[] myList = new int[length];
+      int value = 0;
+      for(int i=0; i<length; i++) {
+        System.out.println("Enter value "+i+" position");
+        myList[i] = input.nextInt();
+      }
+      System.out.println("Printing Array");
+      System.out.println("--------");
+      for(int i=0; i<length; i++) {
+        System.out.println(i+" position value is "+myList[i]);
+      }
+  }
+}
+```
 Array test and sum
 ------------------
 ```java
