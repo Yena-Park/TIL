@@ -107,7 +107,7 @@ for (int i = 0; i<myList.length ; i++) {
 }
 System.out.println("Sum of my list is "+ sum);
 ```
-Write a program. Ask user to enter the length of array.Once you get the length from user, declare and create the ARRAY of length given by user. Using FOR LOOP
+Write a program. Ask user to enter the length of array.Once you get the length from user, declare and create the ARRAY of length given by user. And then find the sum of all array. Using FOR LOOP
 ------------------------------------------
 ```java
 import java.util.Scanner;
