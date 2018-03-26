@@ -121,10 +121,10 @@ Nested loop : For from 1 to 5 Table
 public static void main(String[] args) {
   for(int i = 1 ; i <=5; i ++)
   { //inside for loop
-    System.out.println("--------------------TABLE OF  " + i +" STARTS HERE -------------");
+    System.out.println("--------------------TABLE OF " + i +" STARTS HERE -------------");
     for (int j=1;  j<=10;   j++)
     { //child for loop
-      System.out.println(i + " *  " + j  +" = " +(i*j));
+      System.out.println(i + " * " + j  + " = " + (i*j));
     } //end of child for loop
   }
 }
