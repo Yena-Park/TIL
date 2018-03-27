@@ -154,3 +154,26 @@ public static void calculateSum(int a, double b, int c, int d) {
   double sum = 0;
   return sum = a+b+c+d;
 ```
+Sum Series
+----------
+```java
+public static void main(String[] args) {
+  int i = 1;
+  int j = 10;
+  int k = yenasum(i, j);
+  System.out.println("sum from " +i +" to " + j + " is " + k);
+}
+public static int yenasum(int num1, int num2) {
+  int result=0;
+  String temp = " ";
+  for(int i = num1 ; i<=num2;i++)
+  {
+    result +=i;
+    temp = temp + i + "+" ;
+    if (i != num2)
+      temp = temp + "+";      
+  }
+  System.out.println( temp  + "=" +result);
+  return result;
+}
+```
