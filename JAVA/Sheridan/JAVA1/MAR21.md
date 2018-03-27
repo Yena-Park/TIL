@@ -116,22 +116,41 @@ public class practice {
 Sum
 ---
 ```java
-  public static void main(String[] args) {
-    calculateSum(5, 4.5);
-  }
-  public static void calculateSum(int a, double b) {
-    double sum = a+b;
-    System.out.println("sum is "+sum);
-  }
+public static void main(String[] args) {
+  calculateSum(5, 4.5);
+}
+public static void calculateSum(int a, double b) {
+  double sum = a+b;
+  System.out.println("sum is "+sum);
+}
+```
+```java
+public static void main(String[] args) {
+ double d = caculateSum(5, 4.5);
+ System.out.println("Value of d is "+d);
+}
+public static double calculateSum(int a, double b) {
+  double sum = 0;
+  return sum = a+b;
+}
 ```
 More Sum
 --------
 ```java
-  public static void main(String[] args) {
-    double calculateSum(5, 4.5, 10, 20);
-    System.out.println("Value of d is "+d);
-  }
-  public static void calculateSum(int a, double b) {
-    double sum = a+b+c+d;
-    System.out.println("sum is "+sum);
+public static void main(String[] args) {
+  double calculateSum(5, 4.5, 10, 20);
+  System.out.println("Value of d is "+d);
+}
+public static void calculateSum(int a, double b) {
+  double sum = a+b+c+d;
+  System.out.println("sum is "+sum);
+```
+```java
+public static void main(String[] args) {
+  double d = calculateSum(5, 4.5, 10, 20);
+  System.out.println("Value of d is "+d);
+}
+public static void calculateSum(int a, double b, int c, int d) {
+  double sum = 0;
+  return sum = a+b+c+d;
 ```
