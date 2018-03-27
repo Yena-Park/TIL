@@ -169,7 +169,7 @@ public static int yenasum(int num1, int num2) {
   for(int i = num1 ; i<=num2;i++)
   {
     result +=i;
-    temp = temp + i + "+" ;
+    temp = temp + i ;
     if (i != num2)
       temp = temp + "+";      
   }
