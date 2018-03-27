@@ -48,7 +48,7 @@ public static void displayMethod2() {
   System.out.println("Method2");
 }
 ```
-In your main method print Hello. And in your own custom method ask user to enter his/her name and print it. Call the custo method from  main method.
+In your main method print Hello. And in your own custom method ask user to enter his/her name and print it. Call the custom method from  main method.
 ---------------------------------------------------------------------------------------------------------------------------
 ```java
 import java.util.Scanner;
