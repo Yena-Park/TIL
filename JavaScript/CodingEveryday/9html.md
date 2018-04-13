@@ -1,5 +1,7 @@
 Function
---------
+=========
+Basic
+-----
 ```javascript
 <!DOCTYPE>
 <h1>Function</h1>
