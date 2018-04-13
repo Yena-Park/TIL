@@ -1,0 +1,26 @@
+Function
+--------
+```html
+<!DOCTYPE>
+<html>
+ <head>
+  <meta charset="utf-8">
+ </head>
+  <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <h2>Return</h2>
+</html>
+```
