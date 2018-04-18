@@ -55,3 +55,28 @@ import becker.robots.*;
         }
     }
 ```
+Test Another Robot
+------------------
+```java
+import becker.robots.*;
+    
+    public class TestAnotherRobot {
+      
+        //main method
+        public static void main(String[] args) {
+           City city = new City(10, 10);
+           AnotherRobot aRobot = new AnotherRobot(city, 1, 2, Direction.NORTH, 100);
+           Wall w = new Wall(city, 1, 1, Direction.WEST);
+            
+           //turn right
+           aRobot.turnRight();
+           //move five steps
+           aRobot.move(5);
+            
+           aRobot.faceDirection(Direction.WEST);
+           aRobot.moveToWall();
+           aRobot.faceDirection(Direction.EAST);
+           aRobot.makeBox(3, 4);
+       }
+    }
+```
