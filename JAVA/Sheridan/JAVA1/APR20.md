@@ -28,3 +28,29 @@ public class Circle {
  }        
 }
 ```
+
+```java
+import java.util.*;
+public class DemoTwoCatch{
+ public static void main(String[] args)
+ {
+  int i = 5;
+  int j = 0;
+  int[] myList = {10,20,30};
+
+  try  {
+   // System.out.println("i divided by j" +(i/j));
+   System.out.println("element at 3rd position" +myList[3]);  
+  }
+  catch(ArithmeticException ex){
+   System.out.println("you are in arithmetic exception");
+   System.out.println(ex);
+  }   
+  catch(ArrayIndexOutOfBoundsException ex){
+   System.out.println("you are in ArrayIndexOutofBound exception");
+   System.out.println(ex);
+  }
+  System.out.println("Execution continue...");
+ }
+}
+```
