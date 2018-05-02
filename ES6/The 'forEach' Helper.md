@@ -30,3 +30,42 @@ numbers.forEach(adder);
 //print the sum variable
 sum;
 ```
+
+Moving Away from For Loops
+--------------------------
+```javaScript
+var posts = [
+      { id: 23, title: 'Daily JS News' },
+      { id: 52, title: 'Code Refactor City' },
+      { id: 105, title: 'The Brightest Ruby' }
+    ];
+posts.forEach(function(post){
+    savePost(post);
+});
+```
+
+Processing Values
+-----------------
+```javaScript
+var images = [
+  { height: 10, width: 30 },
+  { height: 20, width: 90 },
+  { height: 54, width: 32 }
+];
+var areas = [];
+
+
+var images = [
+  { height: 10, width: 30 },
+  { height: 20, width: 90 },
+  { height: 54, width: 32 }
+];
+
+var areas = [];
+
+images.forEach(function(image){
+    var area = image.height*image.width;
+    areas.push(area);
+});
+areas;
+```
