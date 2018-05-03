@@ -69,3 +69,8 @@ images.forEach(function(image){
 });
 areas;
 ```
+.forEach()
+==========
+* forEach() 메소드는 배열 요소마다 한번씩 제공한 함수를 실행
+* Syntax : arr.forEach(callback[, thisArg])
+[reference] (https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
