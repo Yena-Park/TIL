@@ -49,3 +49,4 @@ balancedParens("(((("); //결과는 4
 =========
 * reduce() 메서드는 왼쪽에서 오른쪽으로 이동하며 배열의 각 요소마다 누적 계산값과 함께 함수를 적용해 하나의 값으로 줄임.
 * Syntax: arr.reduce(callback[, initialValue])
+[reference] (https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
