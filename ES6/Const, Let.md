@@ -50,9 +50,9 @@ Const / Let
 * const : 읽기 전용 참조를 생성. 상수 초기자(initializer)가 필요. 변수 재선언과 재할당 모두 불가능
   [reference] (https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/const)
 * let : 블록 유효 범위를 갖는 지역 변수를 서언하며, 선언과 동시에 임의의 값으로 초기화할 수도 있음. 변수에 재할당 가능
-  [reference] (https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/let)
-  
-What's difference between var, let and const
+  [reference] (https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/let)     
+
+What's difference between var, let and const      
 ===========================================
  > var : function-scoped
  > let, const : block-scoped
@@ -65,5 +65,5 @@ a = 'test3'     // 가능
 // const
 const b = 'test'
 const b = 'test2' // Uncaught SyntaxError: Identifier 'a' has already been declared
-```
 b = 'test3'    // Uncaught TypeError:Assignment to constant variable.</code>
+```
