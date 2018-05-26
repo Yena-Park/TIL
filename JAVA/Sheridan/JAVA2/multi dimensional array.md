@@ -106,11 +106,11 @@ public class ParkingLot
 
   public String parkCar (Car car)
   {
-    for (int parkingLevel = 0; parkingLevel < cars.length; parkingLevel++) {
-      for (int parkingPosition = 0; parkingPosition < cars[parkingLevel].length; parkingPosition++) {
-        if (cars[parkingLevel][parkingPosition] == null) {
-          cars[parkingLevel][parkingPosition] = car;
-          return car.getLicensePlate() + " was parked on Level " + parkingLevel + " in position " + parkingPosition;
+    for (int level = 0; level < cars.length; level++) {
+      for (int location = 0; location < cars[level].length; location++) {
+        if (cars[level][location] == null) {
+          cars[level][location] = car;
+          return car.getLicensePlate() + " was parked on Level " + level + " in position " + location;
         }
       }
     }
@@ -119,11 +119,11 @@ public class ParkingLot
 
   public Car retrieveCar (String licensePlate)
   {
-    for (int parkingLevel = 0; parkingLevel < cars.length; parkingLevel++) {
-      for (int parkingPosition = 0; parkingPosition < cars[parkingLevel].length; parkingPosition++) {
-        if (cars[parkingLevel][parkingPosition] != null && cars[parkingLevel][parkingPosition].getLicensePlate().equals(licensePlate)) {
-          Car returnedCar = cars[parkingLevel][parkingPosition];
-          cars[parkingLevel][parkingPosition] = null;
+    for (int level = 0; level < cars.length; level++) {
+      for (int location = 0; parkingPosition < cars[level].length; location++) {
+        if (cars[level][location] != null && cars[level][location].getLicensePlate().equals(licensePlate)) {
+          Car returnedCar = cars[level][location];
+          cars[level][location] = null;
           return returnedCar;
         }
       }
@@ -134,14 +134,14 @@ public class ParkingLot
   public void printStatus ()
   {
     String output = this.lotName + "\n";
-    for (int parkingLevel = 0; parkingLevel < cars.length; parkingLevel++) {
-      output += "Lot Level: " + parkingLevel + ":  ";
-      for (int parkingPosition = 0; parkingPosition < cars[parkingLevel].length; parkingPosition++) {
-        if (cars[parkingLevel][parkingPosition] == null) {
+    for (int level = 0; level < cars.length; level++) {
+      output += "Lot Level: " + level + ":  ";
+      for (int parkingPosition = 0; parkingPosition < cars[level].length; parkingPosition++) {
+        if (cars[level][parkingPosition] == null) {
           output += "EMPTY ";
         }
         else {
-          output += cars[parkingLevel][parkingPosition].getLicensePlate() + " ";
+          output += cars[level][parkingPosition].getLicensePlate() + " ";
         }
       }
       output += "\n";
