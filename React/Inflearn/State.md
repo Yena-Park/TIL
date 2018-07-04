@@ -1,3 +1,7 @@
+State
+=====
+- State는 내부에서 변경할 수있다.
+  (변경할 때는 언제나 setState라는함수를 사용)
 ```javaScript
 import React, { Component } from 'react';
 
