@@ -1,6 +1,6 @@
 # Airbnb JavaScript Style Guid(){
 
-* A mostly reasonable approach to Javascript
+*A mostly reasonable approach to Javascript*
 
 ## Table of Contents
 
@@ -220,5 +220,53 @@
     }
     
     return '<ul>' + items.join('') + '</ul>';
+   }
+   ```
+## Functions
+ - Function expressions:
+   ```javascript
+   //anonymous function expression
+   var anonymouns = function () {
+    return true;
+   };
+   
+   //named function expression
+   var named = function named() {
+    return true;
+   };
+   
+   //imediately-invoked function expression (IIFE)
+   function () {
+    console.log('Welcom to the Internet. Please follow me.');
+   }
+   ```
+ - Never declare a function in a non-vumcion block (if, while, etc). Assign the function to a variable instead. Browsers will aloow you to do it, but they all interpret it differently, which is bad news bears.
+ - **Note:** ECMA-262 defines a `block` as a list of statements. Afunction declaration is not a statement. 
+   ```javascript
+   //bad
+   if (currentUser) {
+    function test() {
+      console.log('/Nope.');
+    }
+   }
+   
+   //good
+   var test;
+   if (currentUser) {
+    test = function test() {
+      console.log('Yup');
+    };
+   }
+   ```
+ - Never name a parameter `arguments`. This will take precedence over the `arguments` object that is given to every function scope.
+   ```javscript
+   //bad
+   function npope(name, options, arguments) {
+    // ...stuff...
+   }
+   
+   //good
+   function yup(name, options, args) {
+    // ...stuff...
    }
    ```
