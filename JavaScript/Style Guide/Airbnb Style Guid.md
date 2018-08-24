@@ -1409,3 +1409,4 @@
     // good
     $sidebar.find('ul').hide();
     ```
+}
