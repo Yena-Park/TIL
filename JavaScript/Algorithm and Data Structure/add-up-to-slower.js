@@ -4,7 +4,7 @@ function addUpTo(n) {
     total += i;
   }
   return total;
-}
+};
 
 var t1 = performance.now();
 addUpTo(1000000000);
